@@ -1,18 +1,28 @@
+import React from "react";
 import { Link } from "react-router-dom";
-import CartWidget from "./CartWidget.jsx";
+import CartWidget from "./CartWidget";
 
-const NavBar = () => {
+export default function NavBar() {
   return (
-    <nav className="navbar">
-      <Link to="/" className="logo">MiTienda</Link>
-      <ul className="menu">
-        <li><Link to="/category/camisetas">Camisetas</Link></li>
-        <li><Link to="/category/indumentaria">Indumentaria</Link></li>
-        <li><Link to="/category/calzado">Calzado</Link></li>
-      </ul>
+    <nav style={{
+      display: "flex",
+      justifyContent: "space-between",
+      alignItems: "center",
+      padding: "10px 20px",
+      backgroundColor: "#222",
+      color: "#fff"
+    }}>
+      <Link to="/" style={{ color: "white", textDecoration: "none" }}>
+        <h2>Chimichurri Store</h2>
+      </Link>
+
+      <div style={{ display: "flex", gap: "20px" }}>
+        <Link to="/category/remeras" style={{ color: "white" }}>Remeras</Link>
+        <Link to="/category/buzos" style={{ color: "white" }}>Buzos</Link>
+        <Link to="/category/accesorios" style={{ color: "white" }}>Accesorios</Link>
+      </div>
+
       <CartWidget />
     </nav>
   );
-};
-
-export default NavBar;
+}
