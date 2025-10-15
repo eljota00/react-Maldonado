@@ -1,9 +1,9 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { CartProvider } from "./contexts/CartContext";
-import NavBar from "../components/NavBar";
+import NavBar from "./components/NavBar";
 import ItemListContainer from "./pages/ItemListContainer";
-import ItemDetailContainer from "./pages/ItemDetailContainer";
+import ItemDetailContainer from "./pages/ItemDetailConteiner";
 import Cart from "./pages/Cart";
 import CheckoutForm from "./pages/CheckoutForm";
 

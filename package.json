@@ -1,0 +1,27 @@
+{
+  "name": "ecommerce-react-maldonado",
+  "version": "1.0.0",
+  "description": "SPA de e-commerce desarrollada en **React** con conexión a **Firebase (Firestore)**.",
+  "main": "index.js",
+  "scripts": {
+    "start": "vite",
+    "build": "vite build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eljota00/react-Maldonado.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eljota00/react-Maldonado/issues"
+  },
+  "homepage": "https://github.com/eljota00/react-Maldonado#readme",
+  "dependencies": {
+    "firebase": "^12.4.0",
+    "react-router-dom": "^7.9.4",
+    "vite": "^7.1.10"
+  }
+}

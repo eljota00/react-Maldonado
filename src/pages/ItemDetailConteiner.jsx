@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { fetchProductById } from "../services/ProductsService";
-import ItemDetail from "./ItemDetail";
+import ItemDetail from "./ItemDetai";
 
 export default function ItemDetailContainer() {
   const { id } = useParams();
